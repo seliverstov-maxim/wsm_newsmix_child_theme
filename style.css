@@ -1,0 +1,45 @@
+/*
+Theme Name: News Mix WSM child
+Theme URI: http://kopatheme.com
+Author: Kopatheme and WSM
+Author URI: http://kopatheme.com
+Description: News Mix theme is designed for magazine, news with flexible layout. The theme is based on KOPATHEME layout manager technique that will let you flexibility choose layout options of every pages within your site. It is very helpful when you are experimenting with visual hierarchy. You can define unlimited sidebar for widget areas, and with powerful custom widgets, the theme provides you more flexibility and ease-of-use for your site
+Template: newsmix-2.0.2
+Version: 0.0.1
+License: GNU General Public License v3
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+Tags: black, red, white, two-columns, three-columns, right-sidebar, responsive-layout, custom-menu, editor-style, featured-images, post-formats, threaded-comments, theme-options, translation-ready
+*/
+
+@import url(../newsmix-2.0.2/style.css); 
+
+#main-col.main-col-fullwidth{
+    width: 100%;
+    border-right:  none;
+    margin-right: 0px;
+    padding-right: 0px;
+}
+
+div.widget_recent_post_widget {
+    width: 304px;
+    float: left;
+}
+
+div.widget_recent_post_widget .widget-title {
+    margin-bottom: 0px;
+}
+
+.recent_post_thumbnail {
+    height: 150px;
+    text-align: center;
+    background-color: #aaa;
+}
+
+.recent_post_blogname {
+    color: white;
+    background-color: red;
+}
+
+.recent_post_title {
+    display: none;
+}
