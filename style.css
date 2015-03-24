@@ -32,7 +32,11 @@ div.widget_recent_post_widget .widget-title {
 .recent_post_thumbnail {
     height: 150px;
     text-align: center;
-    background-color: #aaa;
+}
+
+.recent_post_thumbnail.no-image {
+    background: url(images/no-image.jpg) no-repeat center center;
+    background-size: 200px 200px;
 }
 
 .recent_post_blogname {
