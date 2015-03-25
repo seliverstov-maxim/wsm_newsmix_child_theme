@@ -1,6 +1,7 @@
 <?php
     $posttags = get_the_tags();
-    $output_tags = array_slice($posttags, 0, 2);
+
+    $output_tags = $posttags ? array_slice($posttags, 0, 2) : array();
     $tag_count = count($posttags);
     $thumbnail = get_the_post_thumbnail(null, 'kopa-image-size-4'); 
 ?>
