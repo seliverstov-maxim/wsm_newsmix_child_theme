@@ -13,6 +13,10 @@ Tags: black, red, white, two-columns, three-columns, right-sidebar, responsive-l
 
 @import url(../newsmix-2.0.2/style.css); 
 
+/*
+    front page
+*/
+
 #main-col.main-col-fullwidth{
     width: 100%;
     border-right:  none;
@@ -34,7 +38,7 @@ div.widget_recent_post_widget .widget-title {
     text-align: center;
 }
 
-.recent_post_thumbnail.no-image {
+.no-image {
     background: url(images/no-image.jpg) no-repeat center center;
     background-size: 200px 200px;
 }
@@ -46,4 +50,93 @@ div.widget_recent_post_widget .widget-title {
 
 .recent_post_title {
     display: none;
+}
+
+
+/*
+    category index
+*/
+
+.article-list li {
+  width: 49%;
+  float: left;
+  height: 160px;
+  overflow: hidden;
+  border: solid 1px black;
+  margin-bottom: -1px;
+  margin-right: -1px;
+  position: relative;
+}
+
+.article-list li .entry-item .entry-thumb {
+  height: 130px;
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+  float: none;
+}
+
+.article-list li .entry-item .entry-thumb img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.article-list li .entry-item .entry-thumb .tags {
+  position: absolute;
+  right: 0px;
+  top: 38%;
+  background-color: #e03d3d;
+  padding: 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #fff;
+}
+
+.article-list li .entry-item .entry-thumb .tags a {
+  background-color: #e03d3d;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #fff;
+}
+
+.article-list li .entry-item .entry-thumb .tags a:hover {
+  color: #fff;
+}
+
+.article-list li .entry-title {
+  font-size: 20px;
+  background-color: #e03d3d;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  line-height: 20px;
+  min-height: 60px;
+}
+
+.article-list li .entry-title a {
+  color: #fff;
+  display: block;
+  padding: 10px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.article-list li .entry-content {
+  position: absolute;
+  bottom: 0px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  width: 100%;
+}
+
+
+#main-col {
+  width: 660px;
+}
+
+.article-list li.ads {
+  height: 50px;
 }
