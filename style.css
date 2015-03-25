@@ -143,4 +143,5 @@ div.widget_recent_post_widget .widget-title {
 
 .article-list li.ads {
   height: 50px;
+  padding: 0;
 }

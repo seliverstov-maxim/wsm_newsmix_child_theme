@@ -8,8 +8,8 @@
             get_template_part('library/templates/blog', 'element');
 
             if($counter == 5) {
-                if ( is_active_sidebar('cat_index_ads1')) { dynamic_sidebar('cat_index_ads1'); }
-                if ( is_active_sidebar('cat_index_ads2')) { dynamic_sidebar('cat_index_ads2'); }
+                if ( is_active_sidebar('cat_index_ads1')) { dynamic_sidebar('cat_index_ads1'); } else { echo '<li class="ads"></li>'; }
+                if ( is_active_sidebar('cat_index_ads2')) { dynamic_sidebar('cat_index_ads2'); } else { echo '<li class="ads"></li>'; }
             }
 
             if($counter == 9) {
