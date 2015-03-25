@@ -100,6 +100,7 @@ div.widget_recent_post_widget .widget-title {
   text-transform: uppercase;
   font-weight: bold;
   color: #fff;
+  white-space: nowrap;
 }
 
 .article-list li .entry-item .tags a:hover {
@@ -124,7 +125,6 @@ div.widget_recent_post_widget .widget-title {
   text-overflow: ellipsis;
   overflow: hidden;
   height: 40px;
-  white-space: nowrap;
 }
 
 .article-list li .entry-content {
