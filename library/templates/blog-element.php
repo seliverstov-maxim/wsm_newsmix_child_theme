@@ -29,6 +29,7 @@
     <div class="entry-content">
         <header>
             <h4 class="entry-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
+            <div class="multiline-overflow"></div>
         </header>
     </div>
 </li>
