@@ -10,21 +10,21 @@
         <a href="<?php the_permalink(); ?>">
             <div class="entry-thumb <?= ($thumbnail) ? '' : 'no-image'?> ">
                 <?php if ($thumbnail) { echo $thumbnail; } ?>
-                <?php if ($posttags) : ?>
-                    <div class="tags">
-                        <?php foreach($output_tags as $tag) : ?>
-                            <?php
-                                $tag_link = get_tag_link( $tag->term_id );
-                                if($tag->name) {
-                                    echo "<a href='{$tag_link}' title='{$tag->name} Tag' class='{$tag->slug}'>{$tag->name}</a>";
-                                }
-                            ?>
-                        <?php endforeach; ?>
-                        <?php if($tag_count > 2) { echo ' ...'; } ?>
-                    </div>
-                <?php endif; ?>
             </div>
         </a>
+        <?php if ($posttags) : ?>
+            <div class="tags">
+                <?php foreach($output_tags as $tag) : ?>
+                    <?php
+                        $tag_link = get_tag_link( $tag->term_id );
+                        if($tag->name) {
+                            echo "<a href='{$tag_link}' title='{$tag->name} Tag' class='{$tag->slug}'>{$tag->name}</a>";
+                        }
+                    ?>
+                <?php endforeach; ?>
+                <?php if($tag_count > 2) { echo ' ...'; } ?>
+            </div>
+        <?php endif; ?>
     </article>
     <div class="entry-content">
         <header>

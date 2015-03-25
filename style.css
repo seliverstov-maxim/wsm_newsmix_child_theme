@@ -83,7 +83,7 @@ div.widget_recent_post_widget .widget-title {
   max-height: 100%;
 }
 
-.article-list li .entry-item .entry-thumb .tags {
+.article-list li .entry-item .tags {
   position: absolute;
   right: 0px;
   top: 38%;
@@ -94,14 +94,14 @@ div.widget_recent_post_widget .widget-title {
   color: #fff;
 }
 
-.article-list li .entry-item .entry-thumb .tags a {
+.article-list li .entry-item .tags a {
   background-color: #e03d3d;
   text-transform: uppercase;
   font-weight: bold;
   color: #fff;
 }
 
-.article-list li .entry-item .entry-thumb .tags a:hover {
+.article-list li .entry-item .tags a:hover {
   color: #fff;
 }
 
@@ -135,6 +135,10 @@ div.widget_recent_post_widget .widget-title {
 
 #main-col {
   width: 660px;
+}
+
+.kp-l-col {
+    width: 680px;
 }
 
 .article-list li.ads {
