@@ -33,7 +33,7 @@
   add_filter( 'widget_archives_args', 'my_limit_archives' );
 
   function page_menu_args( $args ) {
-    $args['show_home'] = true;
+    $args['show_home'] = false;
     return $args;
   }
   add_filter( 'wp_page_menu_args', 'page_menu_args' );
