@@ -32,8 +32,7 @@
   }
   add_filter( 'widget_archives_args', 'my_limit_archives' );
 
-  function page_menu_args( $args ) {
-    $args['show_home'] = false;
-    return $args;
+  function remove_home_from_nav_menu() {
+    remove_filter( 'wp_nav_menu_items', 'kopa_add_icon_home_menu' );
   }
-  add_filter( 'wp_page_menu_args', 'page_menu_args' );
+  add_action('init', 'remove_home_from_nav_menu');
