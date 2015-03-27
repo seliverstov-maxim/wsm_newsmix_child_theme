@@ -24,3 +24,16 @@
     register_sidebar(array('name' => 'Category index ads 4', 'id' => 'cat_index_ads4', 'before_widget' => '<li class="ads">', 'after_widget'  => '</li>'));
   }
   add_action('widgets_init', 'registert_ads_widget_areas');
+
+
+  function my_limit_archives( $args ) {
+    $args['limit'] = 6;
+    return $args;
+  }
+  add_filter( 'widget_archives_args', 'my_limit_archives' );
+
+  function page_menu_args( $args ) {
+    $args['show_home'] = true;
+    return $args;
+  }
+  add_filter( 'wp_page_menu_args', 'page_menu_args' );
