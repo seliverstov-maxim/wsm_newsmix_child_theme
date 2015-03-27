@@ -1,7 +1,7 @@
 <?php $counter = 1; ?>
 
 <?php 
-    if ( have_posts() ) {
+    if ( have_posts() && $wp_query->posts ) {
         while( have_posts() ){
             the_post(); 
             $counter++; 

@@ -1,4 +1,6 @@
 <?php
+  require_once(get_stylesheet_directory() . '/library/helpers.php');
+
 
   function include_custom_styles_for_subsites() {
     $custom_css_uri =  '/css/style-for-blog-' . get_current_blog_id() . '.css';
@@ -7,6 +9,13 @@
     }
   }
   add_action('wp_enqueue_scripts', 'include_custom_styles_for_subsites');
+
+
+  function include_dynamic_colors() {
+    require_once( get_stylesheet_directory() . '/library/includes/dynamic_colors.php');
+  }
+  add_action('wp_head', 'include_dynamic_colors');
+
 
   function registert_ads_widget_areas() {
     register_sidebar(array('name' => 'Category index ads 1', 'id' => 'cat_index_ads1', 'before_widget' => '<li class="ads">', 'after_widget'  => '</li>'));
