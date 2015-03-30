@@ -12,7 +12,7 @@
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(<?= implode(', ', hex2rgb($color)); ?>, 1));
   }
 
-  .mailchimp-signup-form .input[type=submit] {
+  .form.mailchimp-signup-form input[type=submit] {
     background-color: #6babff;
   }
 </style>
