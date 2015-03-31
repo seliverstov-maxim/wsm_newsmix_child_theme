@@ -157,6 +157,10 @@ div.widget_recent_post_widget .widget-title {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(224, 61, 61, 1));
 }
 
+/*
+  sidebar
+*/
+
 .form .mailchimp-signup-form input[type=email] {
   border: 1px solid #ebebeb;
   border-radius: 0;
@@ -184,4 +188,16 @@ div.widget_recent_post_widget .widget-title {
   -webkit-box-sizing: border-box;
   padding: 8px 10px;
   margin-left: -3px;
+}
+
+/*
+  crawler
+*/
+
+.kp-headline .ticker-1 a {
+  color: #fff;
+}
+
+.mtphr-dnt {
+  max-width: 900px;
 }

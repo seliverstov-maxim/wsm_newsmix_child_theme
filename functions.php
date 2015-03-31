@@ -25,6 +25,11 @@
   }
   add_action('widgets_init', 'registert_ads_widget_areas');
 
+  function register_news_ticker_widget_area() {
+    register_sidebar(array('name' => 'News Ticker Area', 'id' => 'news_ticker'));
+  }
+  add_action('widgets_init', 'register_news_ticker_widget_area');
+
 
   function my_limit_archives( $args ) {
     $args['limit'] = 6;
@@ -36,3 +41,14 @@
     remove_filter( 'wp_nav_menu_items', 'kopa_add_icon_home_menu' );
   }
   add_action('init', 'remove_home_from_nav_menu');
+
+
+  function add_news_ticker_area() {
+    if(is_active_sidebar('news_ticker')){
+       dynamic_sidebar('news_ticker');
+
+      $mover = new jQueryNodeMover();
+      $mover->deatach('.mtphr-dnt-widget')->append('.ticker-1.clearfix')->apply(true);
+    }
+  }
+  add_action('wp_footer', 'add_news_ticker_area');
